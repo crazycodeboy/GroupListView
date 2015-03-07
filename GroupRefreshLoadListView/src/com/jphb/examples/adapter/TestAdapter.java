@@ -64,8 +64,8 @@ public class TestAdapter extends BaseAdapter implements PinnedSectionListAdapter
 		}else {
 			convertView=LayoutInflater.from(activity).inflate(R.layout.line_content_layout, null);
 			TextView tvTitle=(TextView) convertView.findViewById(R.id.tvTitle);
-			TextView tvContent=(TextView) convertView.findViewById(R.id.tvContent);
-			TextView tvDate=(TextView) convertView.findViewById(R.id.tvDate);
+			TextView tvContent=(TextView) convertView.findViewById(R.id.tvDateTime);
+			TextView tvDate=(TextView) convertView.findViewById(R.id.tvSum);
 			tvTitle.setText(item.getTitle());
 			tvContent.setText(item.getContent());
 			tvDate.setText(item.getDate());
