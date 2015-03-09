@@ -5,6 +5,7 @@ public class ddd {
 	public ddd() {
 		// TODO Auto-generated constructor stub
 		System.out.println("ddd");
+		System.out.println("dd");
 	}
 
 	/**
