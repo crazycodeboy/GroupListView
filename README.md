@@ -1,6 +1,7 @@
 # GroupListView简介 #
 - GroupListView支持上拉加载下拉刷新，并且可以根据需要选择是否启用下拉刷新、上拉加载
-- GroupListView支持列表项悬停效果 
+- GroupListView支持列表项悬停效果    
+ 
 ## 运行效果图 ##
 ![运行效果图](https://github.com/crazycodeboy/GroupListView/blob/dev/raw/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C%E5%9B%BE.gif?raw=true)
 
