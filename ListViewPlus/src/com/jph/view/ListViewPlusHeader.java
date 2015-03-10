@@ -1,9 +1,3 @@
-/**
- * @file listview_plusHeader.java
- * @create Apr 18, 2012 5:22:27 PM
- * @author Maxwin
- * @description listview_plus's header
- */
 package com.jph.view;
 
 import android.content.Context;
@@ -20,6 +14,11 @@ import android.widget.TextView;
 
 import com.jph.lp.R;
 
+/** 
+ * ListViewPlus的头布局
+ * @author JPH
+ * @date 2015-3-10 下午1:03:44
+ */
 public class ListViewPlusHeader extends LinearLayout {
 	private LinearLayout mContainer;
 	private ImageView mArrowImageView;

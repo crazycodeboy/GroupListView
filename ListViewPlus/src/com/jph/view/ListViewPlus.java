@@ -27,6 +27,11 @@ import android.widget.TextView;
 
 import com.jph.lp.R;
 
+/** 
+ * 基于ListView的自定义控件实现上拉加载下拉刷新
+ * @author JPH
+ * @date 2015-3-10 下午1:01:56
+ */
 public class ListViewPlus extends ListView implements OnScrollListener {
 	/**区分当前操作是刷新还是加载**/
 	public static final int REFRESH = 0;
