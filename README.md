@@ -35,4 +35,3 @@ public boolean isItemViewTypePinned(int viewType) {
 4 .其它使用细节可以参照实例。
 
 
-
