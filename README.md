@@ -13,8 +13,9 @@
 ## 使用方法 ##
 1.  GroupListView是基于ListView开发的一个控件，所以大家可以使用ListView的方式来使用它。
 2.  ListViewPlus部分：关于ListViewPlus方面的功能大家可以参考[https://github.com/crazycodeboy/ListViewPlus](https://github.com/crazycodeboy/ListViewPlus "ListViewPlus")
-3.  PinnedSectionList部分的使用方法如下：
-- 数据适配器必须实现如下方法：
+3.  PinnedSectionList部分：
+
+ PinnedSectionList的使用需要一个实现如下方法的适配器：
 
 ```java
 @Override
@@ -32,3 +33,6 @@ public boolean isItemViewTypePinned(int viewType) {
 ```
 
 4 .其它使用细节可以参照实例。
+
+
+
