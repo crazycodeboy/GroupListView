@@ -156,10 +156,14 @@ public class ListViewPlus extends ListView implements OnScrollListener {
 		if (!mEnablePullLoad) {
 			mFooterView.hide();
 			mFooterView.setOnClickListener(null);
+			//make sure "pull up" don't show a line in bottom when listview with one page 
+			setFooterDividersEnabled(false);
 		} else {
 			mPullLoading = false;
 			mFooterView.show();
 			mFooterView.setState(ListViewPlusFooter.STATE_NORMAL);
+			//make sure "pull up" don't show a line in bottom when listview with one page  
+			setFooterDividersEnabled(true);
 			// both "pull up" and "click" will invoke load more.
 			mFooterView.setOnClickListener(new OnClickListener() {
 				@Override
@@ -289,8 +293,6 @@ public class ListViewPlus extends ListView implements OnScrollListener {
 		case MotionEvent.ACTION_MOVE:
 			final float deltaY = ev.getRawY() - mLastY;
 			mLastY = ev.getRawY();
-			System.out.println("数据监测：" + getFirstVisiblePosition() + "---->"
-					+ getLastVisiblePosition());
 			if (getFirstVisiblePosition() == 0
 					&& (mHeaderView.getVisiableHeight() > 0 || deltaY > 0)) {
 				// the first item is showing, header has shown or pull down.
@@ -315,11 +317,11 @@ public class ListViewPlus extends ListView implements OnScrollListener {
 					}
 				}
 				resetHeaderHeight();
-			}
-			if (getLastVisiblePosition() == mTotalItemCount - 1) {
+			} else if (getLastVisiblePosition() == mTotalItemCount - 1) {
 				// invoke load more.
 				if (mEnablePullLoad
-						&& mFooterView.getBottomMargin() > PULL_LOAD_MORE_DELTA) {
+				    && mFooterView.getBottomMargin() > PULL_LOAD_MORE_DELTA
+				    && !mPullLoading) {
 					startLoadMore();
 				}
 				resetFooterHeight();
