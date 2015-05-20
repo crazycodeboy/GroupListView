@@ -11,13 +11,13 @@ import android.widget.AdapterView.OnItemClickListener;
 
 import com.hb.views.PinnedSectionListView;
 import com.jph.examples.R;
+import com.jph.examples.adapter.TestAdapter;
+import com.jph.examples.adapter.TestAdapter.Item;
 import com.jph.examples.bean.BillList;
 import com.jph.examples.bean.Message;
 import com.jph.examples.bean.MessageGroup;
 import com.jph.view.ListViewPlus;
 import com.jph.view.ListViewPlus.ListViewPlusListener;
-import com.jphb.examples.adapter.TestAdapter;
-import com.jphb.examples.adapter.TestAdapter.Item;
 
 public class TestActivity extends Activity implements ListViewPlusListener{
 	private PinnedSectionListView listView;
