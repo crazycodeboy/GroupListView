@@ -12,11 +12,11 @@ import android.widget.Toast;
 
 import com.hb.views.PinnedSectionListView;
 import com.jph.examples.R;
+import com.jph.examples.adapter.BillAdapter;
+import com.jph.examples.adapter.BillAdapter.Item;
 import com.jph.examples.bean.Bill;
 import com.jph.view.ListViewPlus;
 import com.jph.view.ListViewPlus.ListViewPlusListener;
-import com.jphb.examples.adapter.BillAdapter;
-import com.jphb.examples.adapter.BillAdapter.Item;
 
 /**
  * 方支付宝账单页分组+上拉加载下拉刷新效果
